@@ -217,7 +217,7 @@ while 1:
         # clear the segments
         segments.clear()
 
-    if (snakehead.ycor() < 0 + 40) and (snakehead.ycor() > 0 - 40) and (snakehead.xcor() < saw3.xcor()+50) and (snakehead.xcor() > saw3.xcor()-50):
+    if (snakehead.ycor() < 0 + 40) and (snakehead.ycor() > 0 - 40) and (snakehead.xcor() < saw3.xcor()+45) and (snakehead.xcor() > saw3.xcor()-45):
         time.sleep(1)
         snakehead.goto(0, 50)
         snakehead.direction = "stop"

@@ -11,7 +11,7 @@ app.title("Saw That Snake!")
 app.cv._rootwindow.resizable(False, False)
 app.tracer(0)
 # the path needs to be changed to your path otherwise it wont work
-image = "C:/Users/your path here/snakegame/buzzsaw.gif"
+image = "C:/Users/your path here/buzzsaw.gif"
 app.addshape(image)
 # objects
 # saw

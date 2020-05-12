@@ -85,6 +85,16 @@ pen.shape("square")
 pen.hideturtle()
 pen.goto(0, 260)
 pen.write("Score: 0  Highscore: 0", align="center", font=("Terminal", 25))
+# pen2
+pen2 = turtle.Turtle()
+pen2.speed(0)
+pen2.color("white")
+pen2.penup()
+pen2.shape("square")
+pen2.hideturtle()
+pen2.goto(0, -260)
+pen2.write("Press U to pause for 60 seconds",
+           align="center", font=("Terminal", 25))
 # functions and variables
 segments = []
 delay = 0.1
@@ -136,7 +146,10 @@ app.onkeypress(go_right, "d")
 # main game loop
 while 1:
     app.update()
-
+    def timesleep():
+        time.sleep(60)
+    app.listen()
+    app.onkeypress(timesleep, "u")
     # buzzsaw moving
     x = saw.xcor()
     x += sawspeed

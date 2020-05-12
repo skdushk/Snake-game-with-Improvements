@@ -280,8 +280,8 @@ while 1:
         # food collision checking
     if snakehead.distance(food) < 20:
         # move the food to random spots
-        x = random.randint(-290, 290)
-        y = random.randint(-290, 290)
+        x = random.randrange(-290, 290)
+        y = random.randrange(-290, 290)
         food.goto(x, y)
         # randomly rotating the food===
         rotation = random.randint(0, 360)
